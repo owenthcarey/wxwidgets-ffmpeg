@@ -1,0 +1,6 @@
+---
+Checks: '-*,google-*,llvm-include-order'
+WarningsAsErrors: ''
+HeaderFilterRegex: ''
+FormatStyle: google
+...

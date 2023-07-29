@@ -1,0 +1,10 @@
+{
+  "name": "wxwidgets-ffmpeg",
+  "version-string": "0.1.0",
+  "homepage": "https://github.com/owenthcarey/wxwidgets-ffmpeg",
+  "description": "A video compression tool built with wxWidgets and FFmpeg",
+  "dependencies": [
+    "wxwidgets",
+    "ffmpeg"
+  ]
+}
