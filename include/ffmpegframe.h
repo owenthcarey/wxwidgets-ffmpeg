@@ -5,6 +5,7 @@
 #ifndef WXWIDGETS_FFMPEG_FFMPEGFRAME_H
 #define WXWIDGETS_FFMPEG_FFMPEGFRAME_H
 
+#include <wx/filedlg.h>
 #include <wx/filepicker.h>
 #include <wx/wx.h>
 

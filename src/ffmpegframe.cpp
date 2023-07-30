@@ -3,7 +3,6 @@
 //
 
 #include "../include/ffmpegframe.h"
-#include <wx/filedlg.h>
 
 wxBEGIN_EVENT_TABLE(FfmpegFrame, wxFrame)
                 EVT_BUTTON(wxID_EXECUTE, FfmpegFrame::OnCompress)
@@ -50,7 +49,6 @@ FfmpegFrame::FfmpegFrame() : wxFrame(NULL, wxID_ANY,
     boxSizer->Add(exitButton, 0, wxALL | wxALIGN_CENTER, 15);
     SetSizer(boxSizer);
 }
-
 
 void FfmpegFrame::OnCompress(wxCommandEvent &WXUNUSED(event)) {
     wxString input = filePickerCtrl->GetPath();
