@@ -15,6 +15,7 @@ FfmpegFrame::FfmpegFrame() : wxFrame(NULL, wxID_ANY,
     filePickerCtrl = new wxFilePickerCtrl(this, wxID_ANY);
     resolutionCtrl = new wxTextCtrl(this, wxID_ANY);
     bitrateCtrl = new wxTextCtrl(this, wxID_ANY);
+    crfSlider = new wxSlider(this, wxID_ANY, 23, 0, 51);
     formatCtrl = new wxComboBox(this, wxID_ANY);
     outputDirectoryCtrl = new wxDirPickerCtrl(this, wxID_ANY);
     outputFileNameCtrl = new wxTextCtrl(this, wxID_ANY);
@@ -34,6 +35,9 @@ FfmpegFrame::FfmpegFrame() : wxFrame(NULL, wxID_ANY,
 
     gridSizer->Add(new wxStaticText(this, wxID_ANY, "Bitrate:"));
     gridSizer->Add(bitrateCtrl, 1, wxEXPAND);
+
+    gridSizer->Add(new wxStaticText(this, wxID_ANY, "CRF:"));
+    gridSizer->Add(crfSlider, 1, wxEXPAND);
 
     gridSizer->Add(new wxStaticText(this, wxID_ANY, "Format:"));
     gridSizer->Add(formatCtrl, 1, wxEXPAND);

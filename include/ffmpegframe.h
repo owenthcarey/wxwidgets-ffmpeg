@@ -17,6 +17,7 @@ private:
     wxFilePickerCtrl *filePickerCtrl;
     wxTextCtrl *resolutionCtrl;
     wxTextCtrl *bitrateCtrl;
+    wxSlider *crfSlider;
     wxComboBox *formatCtrl;
     wxDirPickerCtrl *outputDirectoryCtrl;
     wxTextCtrl *outputFileNameCtrl;
