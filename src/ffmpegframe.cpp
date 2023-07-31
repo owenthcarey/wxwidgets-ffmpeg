@@ -18,6 +18,7 @@ FfmpegFrame::FfmpegFrame() : wxFrame(NULL, wxID_ANY,
     formatCtrl = new wxComboBox(this, wxID_ANY);
     outputDirectoryCtrl = new wxDirPickerCtrl(this, wxID_ANY);
     outputFileNameCtrl = new wxTextCtrl(this, wxID_ANY);
+    gauge = new wxGauge(this, wxID_ANY, 100);
 
     wxButton *compressButton = new wxButton(this, wxID_EXECUTE, "Compress");
     wxButton *exitButton = new wxButton(this, wxID_EXIT, "Exit");
@@ -46,6 +47,7 @@ FfmpegFrame::FfmpegFrame() : wxFrame(NULL, wxID_ANY,
     wxBoxSizer *boxSizer = new wxBoxSizer(wxVERTICAL);
     boxSizer->Add(gridSizer, 1, wxALL | wxEXPAND, 15);
     boxSizer->Add(compressButton, 0, wxALL | wxALIGN_CENTER, 15);
+    boxSizer->Add(gauge, 0, wxALL | wxEXPAND, 15);
     boxSizer->Add(exitButton, 0, wxALL | wxALIGN_CENTER, 15);
     SetSizer(boxSizer);
 }
