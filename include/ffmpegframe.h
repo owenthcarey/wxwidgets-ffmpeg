@@ -21,7 +21,6 @@ private:
     wxComboBox *formatCtrl;
     wxDirPickerCtrl *outputDirectoryCtrl;
     wxTextCtrl *outputFileNameCtrl;
-    wxGauge *gauge;
     void OnCompress(wxCommandEvent &event);
     void OnExit(wxCommandEvent &event);
     wxDECLARE_EVENT_TABLE();
